@@ -8,9 +8,9 @@ intro_image_hide_on_mobile: true
 
 # Summer School
 
-We announce the fifth Summer School on Biological and Medical Visualization: the **Bio+Med+Vis Summer School**!
+We announce the sixth Summer School on Biological and Medical Visualization: the **Bio+Med+Vis Summer School**!
 
-The Summer School will be held on **September 30th, 2025 in Delft, The Netherlands**. The event is collocated with the anual meeting of [GI's working group on Visual Computing in Biology and Medicine](https://www.fg-medvis.de/workshop-next.html) (October 1st) and [EG VCBM conference](http://vcbm.org/) (October 2nd-3rd) in Delft, The Netherlands. Participants can anticipate excellent **talks and practical tutorials**, given by experts in Biological and Medical Visualization.
+The Summer School will be held on **September 15th, 2026 in Ljubljana, Slovenia**. The event is collocated with the anual meeting of [GI's working group on Visual Computing in Biology and Medicine](https://www.fg-medvis.de/workshop-next.html) and [EG VCBM conference](http://vcbm.org/) in Ljubljana, Slovenia. Participants can anticipate excellent **talks and practical tutorials**, given by experts in Biological and Medical Visualization.
 
 The Summer School is primarily targeting M.Sc. and Ph.D. students, but anyone who wants to learn more about principles and challenges in visualization for Life Sciences applications is welcome! No preliminary knowledge of Bio+Medical visualization is necessary.
 
