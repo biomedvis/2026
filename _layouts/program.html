@@ -1,0 +1,474 @@
+---
+layout: default
+---
+<style>
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		min-height: 100vh;
+		font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	}
+
+	.schedule {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	table {
+		width: 70%;
+		max-width: 100rem;
+		background: #EEE;
+
+		.break {
+			color: #939393;
+			background: #EEE;
+			font-weight: normal;
+		}
+
+		th,
+		td {
+			padding: 0.5rem 1rem;
+		}
+
+		th {
+			font-weight: normal;
+			width: 25%;
+			border-top: thin dotted #ccc;
+		}
+
+		td {
+			font-size: 1rem;
+			font-weight: bold;
+			line-height: 1.4;
+
+			transition: opacity 0.3s ease;
+		}
+
+		td>span {
+			font-size: 0.8em;
+			font-weight: normal;
+			display: block;
+			width: 100%;
+		}
+
+
+		.stage-earth {
+			color: #e5261f;
+			background-color: #d1d1d1;
+			height: 5em;
+
+			a{
+				text-decoration: underline;
+			}
+		}
+
+		;
+
+		.stage-mercury {
+			background-color: #ffffff
+		}
+
+		;
+
+		.stage-venus {
+			color: #bb1c16;
+			background-color: #bababa
+		}
+
+		;
+	}
+
+	.content table {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.content table th.cet {
+		width: 30px;
+	}
+
+	.content table th.day {
+		width: 60%;
+	}
+
+	.content table th {
+		background: #000;
+		color: #fff;
+		padding: 10px;
+	}
+
+	.content table td {
+		background: #fff;
+	}
+
+	.content table th,
+	.content table td {
+		border: 1px solid #202020;
+		overflow: hidden;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.table-program th .weekday,
+	.table-program th .date {
+		display: block;
+	}
+
+	.table-program .talk-content {
+		vertical-align: middle;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		display: table;
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: 20px;
+	}
+
+	.table-program .icon {
+		position: relative;
+		top: 0px;
+		right: 0px;
+	}
+
+	.table-program .spaker-info {
+		height: 100%;
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.table-program .title {
+		font-size: 18px;
+	}
+
+	.table-program .room {
+		font-size: 12px;
+	}
+
+	.content .legend {
+		text-align: center;
+		width: 100%;
+	}
+
+	.program .day {
+		font-size: 25px;
+		color: gray;
+		margin-bottom: 10px;
+	}
+
+	.program .speaker {
+		background: #EEE;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+
+	.program .speaker .title {
+		font-size: 18px;
+		color: #E5261F;
+		font-weight: bold;
+	}
+
+	.program .speaker .name {
+		font-weight: bold;
+	}
+
+	.program .speaker .room {
+		%font-size: 12px;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+
+	.program .speaker .details {
+		overflow: auto;
+		text-align: top;
+	}
+
+	.program .speaker .details .photo {
+		float: left;
+		width: 30%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.program .speaker .details .abstract {
+		margin: 0px;
+		padding: 5px;
+	}
+
+	.program .speaker .details .photo img {
+		width: 100%;
+		margin: 0px;
+		padding: 10px;
+	}
+
+	.program .speaker .details .photoinfo {
+		font-size: 8pt;
+		margin: 0px;
+		padding: 0px;
+		margin-top: 5px;
+		display: block;
+	}
+
+	.program .speaker .details .bio {
+		margin-left: 110px;
+		padding-left: 25px;
+		padding: 5px;
+	}
+
+	.program .speaker .details .bio-no-photo {
+		margin: 0px;
+		padding: 5px;
+	}
+
+	.program .video {
+		padding-top: 10px;
+		text-align: center;
+	}
+</style>
+
+
+<!-- sorts the program based on date and time -->
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+	<div class="row justify-content-start">
+				<h1 class="title">{{page.title}}</h1>
+				<h5>Here you can find information about the tutorials and program you can look forward to during the
+					summer school.
+					Please note, that the tutorials will be hands-on and we strongly recommend you to bring your own
+					notebook, as technical equipment will not be provided.
+					</a></h5>
+				<br /><br />
+				<h3 style="width:100%;">
+					Tentative schedule:
+				</h3>
+				<div class="schedule">
+					<table>
+
+						<body>
+							<tr>
+								<th>09:00 - 09:30</th>
+								<td colspan="4" rowspan="1" class="stage-venus">Welcome</td>
+							</tr>
+							<tr>
+								<th>09:30 - 10:30</th>
+								<td colspan="4" class="stage-earth"><a href="#Altair">DataVis 10½</a> <span>Part I</span></td>
+							</tr>
+							<tr>
+								<th class="break">10:30 - 10:50</th>
+								<td colspan="4" class="stage-mercury">Break</td>
+							</tr>
+							<tr>
+								<th>10:50 - 12:00</th>
+								<td colspan="4" class="stage-earth"><a href="#Altair">DataVis 10½</a> <span>Part II</span></td>
+							</tr>
+							<tr>
+								<th class="break">12:00 - 13:00</th>
+								<td colspan="4" class="stage-mercury">Lunch Break <span>Note: Selforganized, food is not
+										provided</span></td>
+							</tr>
+							<tr>
+								<th>13:00 - 14:20</th>
+								<td colspan="4" class="stage-earth"><a href="#Altair">DataVis 10½</a> <span>Part III</span></td>
+							</tr>
+							<tr>
+								<th class="break">14:20 - 14:40</th>
+								<td colspan="4" class="stage-mercury">Break</td>
+							</tr>
+							<tr>
+								<th>14:40 - 16:40</th>
+								<td colspan="4" class="stage-earth"><a href="#Inviwo">Inviwo</a></td>
+							</tr>
+							<tr>
+								<th class="break">16:40 - 17:00</th>
+								<td colspan="4" class="stage-mercury">Break</td>
+							</tr>
+							<tr>
+								<th>17:00 - 18:00</th>
+								<td colspan="4" class="stage-venus">Collaboration & Networking</td>
+							</tr>
+
+						</body>
+					</table>
+				</div>
+
+				<h3 >
+					Venue:
+				</h3>
+				<div>The summer school will take place in Commissiekamer 3 in the Aula Building of TU Delft campus south of the city center
+					(<a href="https://duckduckgo.com/?q=aula+tu+delft&t=h_&iaxm=maps&bbox=4.356515148583341%2C52.00769479883141%2C4.393807917174641%2C51.98686305959983&strict_bbox=1">duckduckgo maps</a>). 
+					The Aula building is a sight on its own as one of the brutalist architecture icons of TU Delft. It serves among others as the home of PhD defenses at the TU. It provides ample room for breaks and lunch can be had in the buildings own restaurant.</div>
+					<img style="width:50%;" src="/2025/images/program/campus-map.png" atl="campus map" />
+					<img style="width:50%;" src="/2025/images/program/aula.jpg" atl="aula" />
+
+				
+				
+				<h3 style="width:100%;">
+					Program:
+				</h3>
+				<div class="content">
+					<div class="program" id="speakers">
+
+
+
+						<div class="speaker" id="Altair">
+							<div class="first-line">
+								<span class="title">DataVis 10½: A practical brief intro to data
+									visualization</span><br />
+								<span class="slot">Time: 3.5 hours </span>
+							</div>
+							<div class="name">Laura Garrison, Amy Zhang, Pere-Pau Vázquez</div>
+
+							<br />
+
+							<div class="details">
+								<div class="photo">
+									<img src="/2025/images/program/vega.png" atl="vega altair example" />
+									<!--<span class="photoinfo">Examplary visualization in Vega-Altair.</p> -->
+								</div>
+								<div class="abstract"><strong>Abstract:</strong>
+									Data visualization is a proven means to engage with, explore, and contextualize
+									large volumes of information critical
+									to decision making. However, many questions must be answered to create a
+									visualization, such as: What color should I
+									use for this variable? or should I use a bar- or line-chart to find something? Poor
+									decisions may produce visualizations
+									that mislead, hide, or overstate important features of the data, while good
+									decisions result in clear, more honest
+									depictions of the data. In this hands-on tutorial, we will introduce the basics of
+									visualization design using the
+									Python <a href="https://altair-viz.github.io/">Vega-Altair</a> library.
+								</div>
+
+								<!--<div class="bio">{{ speaker.bio }}</div>-->
+								<br>
+
+								<div class="bio-no-photo"> <a href="https://www.laura-garrison.com/"><strong>Laura
+											Garrison</strong></a>
+									is an associate professor (tenure-track) of visualization in the Department of
+									Informatics at the University of Bergen,
+									and a trained medical illustrator. With her team, she studies processes and
+									assumptions designers make when crafting
+									visualizations, and their impact on audience engagement and behavior, with a special
+									interest in the health and life
+									science domains.</div>
+
+								<div class="bio-no-photo"> <a href="https://vis.uib.no/team/amy-zhang/"><strong>Amy
+											Zhang</strong></a>
+									is a scientifically-minded illustrator, designer, and visualization researcher. She
+									contributes to projects that foster
+									an appreciation and understanding of science within the VisGroup at the University
+									of Bergen and VISABLI research network
+									at the University of Toronto. Specifically, she is interested in the sociotechnical
+									contexts of visualization as well as
+									investigating visual representations as tools for learning and reasoning.</div>
+
+								<div class="bio-no-photo"> <a href="https://www.cs.upc.edu/~ppau/"><strong>Pere-Pau
+											Vázquez</strong></a>
+									is an associate professor at Universitat Politècnica de Catalunya. He holds a PhD in
+									software (computer graphics)
+									and is currently affiliated to the ViRVIG (visualization, virtual reality and
+									graphical interaction) group and the
+									CREB center (center for research in biomedical engineering). His current interests
+									are scientific visualization,
+									information visualization, virtual reality, and applications of deep learning to
+									visualization.
+
+								</div>
+							</div>
+						</div>
+
+						<br />
+						<div class="speaker" id="Inviwo">
+							<div class="first-line">
+								<span class="title">Tutorial on Spatial Data Visualization with Inviwo</span><br />
+								<span class="slot">Time: 2 hours </span>
+							</div>
+							<div class="name">Martin Falk</div>
+							<br />
+
+
+							<div class="details">
+								<div class="photo">
+									<img src="/2025/images/program/inviwo.png" atl="Inviwo example" />
+									<!--<span class="photoinfo">Inviwo volume rendering of cryo-EM density map of a feline calicivirus.</p> -->
+								</div>
+								<div class="abstract"><strong>Abstract:</strong>
+									Inviwo is a rapid prototyping framework for visualizing spatial and abstract data.
+									In this tutorial,
+									we show how Inviwo can be utilized for easily creating visualizations in the
+									biomedical domain.
+									We provide an overview of the concepts used in Inviwo like its visual network editor
+									and the associated data flow paradigm.
+									Several hands-on examples illustrate how to import data and build your own
+									visualization networks.
+									The tutorial is tailored to beginners – no prior experience with the framework is
+									necessary.
+									Inviwo is available at <a href="https://inviwo.org">https://inviwo.org</a> and <a
+										href="https://github.com/inviwo/inviwo">Github</a>.
+								</div>
+								<br>
+
+								<!--<div class="bio">{{ speaker.bio }}</div>-->
+
+								<div class="bio-no-photo"> <a href="mailto:martin.falk@liu.se"><strong>Martin
+											Falk</strong></a>
+									is an Associate Professor in the Scientific Visualization Group at Linköping
+									University.
+									He received his Ph.D. degree (Dr.rer.nat.) from the University of Stuttgart in 2013.
+									His research focuses on the development and utilization of visualization techniques,
+									like volume rendering,
+									topological analysis, and GPU-based methods in general, tailored to specific
+									applications in various application
+									domains including cryo-EM, material science, plasma physics as well as the medical
+									domain. He is also a core
+									developer of the visualization framework Inviwo.</div>
+							</div>
+						</div>
+
+
+						<br />
+						<div class="speaker" id="Networking">
+							<div class="first-line">
+								<span class="title">Collaboration & Networking</span><br />
+								<span class="slot">Time: ~1 hour </span>
+							</div>
+							<div class="name">Organizers</div>
+
+							<br />
+
+							<div class="details">
+
+								<div class="abstract">
+									One of the best things about summer schools is meeting new people. We hope that this
+									one
+									will not be an exception. The school is open to attendees with diverse
+									expertise/interest areas spanning biology, medicine, and visualization.
+									This means there is a unique opportunity to learn from one another, look at the
+									research activities from different perspectives, and
+									maybe even build future collaborations. In this session, you will get a chance to
+									discuss with fellow
+									summer school attendees and find out how research is done in their research group,
+									what problems do they encounter, and how are they approaching them.
+									</br>
+
+									Note: Since the nature of this session strongly depends on the expertise/interest
+									areas of the attendees, it is subject to change. We will tailor the contents of the
+									session
+									and activities to the profile of registered attendees.
+								</div>
+
+								<!--<div class="bio">{{ speaker.bio }}</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+		
+	
+	</div>

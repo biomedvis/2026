@@ -1,0 +1,36 @@
+main:
+  - name: "Bio+Med+Vis School"
+    url: "/school/"
+    weight: 1
+  - name: "Program"
+    url: "/announcements/program/"
+    weight: 2
+  - name: "Team"
+    url: "/team/"
+    weight: 3
+  - name: "Registration"
+    url: "https://forms.gle/SR6hxCMRKNr2Vy1D7"
+    weight: 4
+  - name: "Contact"
+    url: "/contact/"
+    weight: 5
+  - name: "Youtube Channel"
+    url: "https://www.youtube.com/@biomedvis_platform"
+    weight: 6
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Registration"
+    url: "https://forms.gle/SR6hxCMRKNr2Vy1D7"
+    weight: 2  
+  - name: "Contact"
+    url: "/contact/"
+    weight: 3
+  - name: "Previous Events"
+    url: "announcements/previous-events/"
+    weight: 6  
+  - name: "Youtube Channel"
+    url: "https://www.youtube.com/@biomedvis_platform"
+    weight: 6
