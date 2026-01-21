@@ -8,5 +8,4 @@ layout: announcement
 description: Find the registration info here.
 ---
 
-To register, pleas fill in <a href="https://forms.gle/SR6hxCMRKNr2Vy1D7/">this form</a>.
-Registration is free of charge.
+Registration is not opened yet.
