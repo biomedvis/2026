@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-<!-- <style>
-	body {
+<!--
+body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		min-height: 100vh;
 		font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-	}
+}
+-->
 
+<style>
 	.schedule {
 		display: flex;
 		justify-content: center;
@@ -61,7 +63,7 @@ layout: default
 			background-color: #d1d1d1;
 			height: 5em;
 
-			a{
+			a {
 				text-decoration: underline;
 			}
 		}
@@ -181,7 +183,7 @@ layout: default
 	}
 
 	.program .speaker .room {
-		%font-size: 12px;
+		font-size: 12px;
 		margin-bottom: 10px;
 		font-weight: bold;
 	}
@@ -232,29 +234,29 @@ layout: default
 		padding-top: 10px;
 		text-align: center;
 	}
-</style>-->
+</style>
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-start">
-        <div class="col-12 col-md-8">
-            <div class="service service-single">
-                <h1 class="title">{{page.title}}</h1>
-                <div class="content mt-4">Here you will find information about the tutorials and program you can look forward to during the
-					summer school.</div>
-            </div>
-        </div>
-    </div>
-</div>
+	<div class="row justify-content-start">
+		<div class="col-12 col-md-8">
+			<div class="service service-single">
+				<h1 class="title">{{page.title}}</h1>
+				<div class="content mt-4">Here you will find information about the tutorials and program you can look
+					forward to during the summer school.</div>
+			</div>
+		</div>
+	</div>
 
-<!-- sorts the program based on date and time -->
-<!--<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+
+	<!-- sorts the program based on date and time -->
+	<!--<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
 	<div class="row justify-content-start">
 				<h1 class="title">{{page.title}}</h1>
 				<h5>Here you will find information about the tutorials and program you can look forward to during the
 					summer school.
 					<!--Please note, that the tutorials will be hands-on and we strongly recommend you to bring your own
 					notebook, as technical equipment will not be provided.-->
-				<!--</h5>
+	<!--</h5>
 
 				
 				<h3 style="width:100%;">
@@ -318,169 +320,63 @@ layout: default
 					The Aula building is a sight on its own as one of the brutalist architecture icons of TU Delft. It serves among others as the home of PhD defenses at the TU. It provides ample room for breaks and lunch can be had in the buildings own restaurant.</div>
 					<img style="width:50%;" src="/2025/images/program/campus-map.png" atl="campus map" />
 					<img style="width:50%;" src="/2025/images/program/aula.jpg" atl="aula" />
-
-				
-				
-				<h3 style="width:100%;">
-					Program:
-				</h3>
-				<div class="content">
-					<div class="program" id="speakers">
+-->
 
 
-
-						<div class="speaker" id="Altair">
-							<div class="first-line">
-								<span class="title">DataVis 10½: A practical brief intro to data
-									visualization</span><br />
-								<span class="slot">Time: 3.5 hours </span>
-							</div>
-							<div class="name">Laura Garrison, Amy Zhang, Pere-Pau Vázquez</div>
-
-							<br />
-
-							<div class="details">
-								<div class="photo">
-									<img src="/2025/images/program/vega.png" atl="vega altair example" />
-									
-								</div>
-								<div class="abstract"><strong>Abstract:</strong>
-									Data visualization is a proven means to engage with, explore, and contextualize
-									large volumes of information critical
-									to decision making. However, many questions must be answered to create a
-									visualization, such as: What color should I
-									use for this variable? or should I use a bar- or line-chart to find something? Poor
-									decisions may produce visualizations
-									that mislead, hide, or overstate important features of the data, while good
-									decisions result in clear, more honest
-									depictions of the data. In this hands-on tutorial, we will introduce the basics of
-									visualization design using the
-									Python <a href="https://altair-viz.github.io/">Vega-Altair</a> library.
-								</div>
-
-								
-								<br>
-
-								<div class="bio-no-photo"> <a href="https://www.laura-garrison.com/"><strong>Laura
-											Garrison</strong></a>
-									is an associate professor (tenure-track) of visualization in the Department of
-									Informatics at the University of Bergen,
-									and a trained medical illustrator. With her team, she studies processes and
-									assumptions designers make when crafting
-									visualizations, and their impact on audience engagement and behavior, with a special
-									interest in the health and life
-									science domains.</div>
-
-								<div class="bio-no-photo"> <a href="https://vis.uib.no/team/amy-zhang/"><strong>Amy
-											Zhang</strong></a>
-									is a scientifically-minded illustrator, designer, and visualization researcher. She
-									contributes to projects that foster
-									an appreciation and understanding of science within the VisGroup at the University
-									of Bergen and VISABLI research network
-									at the University of Toronto. Specifically, she is interested in the sociotechnical
-									contexts of visualization as well as
-									investigating visual representations as tools for learning and reasoning.</div>
-
-								<div class="bio-no-photo"> <a href="https://www.cs.upc.edu/~ppau/"><strong>Pere-Pau
-											Vázquez</strong></a>
-									is an associate professor at Universitat Politècnica de Catalunya. He holds a PhD in
-									software (computer graphics)
-									and is currently affiliated to the ViRVIG (visualization, virtual reality and
-									graphical interaction) group and the
-									CREB center (center for research in biomedical engineering). His current interests
-									are scientific visualization,
-									information visualization, virtual reality, and applications of deep learning to
-									visualization.
-
-								</div>
-							</div>
-						</div>
-
-						<br />
-						<div class="speaker" id="Inviwo">
-							<div class="first-line">
-								<span class="title">Tutorial on Spatial Data Visualization with Inviwo</span><br />
-								<span class="slot">Time: 2 hours </span>
-							</div>
-							<div class="name">Martin Falk</div>
-							<br />
+	<h3 style="width:100%;">
+		Program:
+	</h3>
+	<div class="content">
+		<div class="program" id="speakers">
 
 
-							<div class="details">
-								<div class="photo">
-									<img src="/2025/images/program/inviwo.png" atl="Inviwo example" />
-									
-								</div>
-								<div class="abstract"><strong>Abstract:</strong>
-									Inviwo is a rapid prototyping framework for visualizing spatial and abstract data.
-									In this tutorial,
-									we show how Inviwo can be utilized for easily creating visualizations in the
-									biomedical domain.
-									We provide an overview of the concepts used in Inviwo like its visual network editor
-									and the associated data flow paradigm.
-									Several hands-on examples illustrate how to import data and build your own
-									visualization networks.
-									The tutorial is tailored to beginners – no prior experience with the framework is
-									necessary.
-									Inviwo is available at <a href="https://inviwo.org">https://inviwo.org</a> and <a
-										href="https://github.com/inviwo/inviwo">Github</a>.
-								</div>
-								<br>
 
-								
-
-								<div class="bio-no-photo"> <a href="mailto:martin.falk@liu.se"><strong>Martin
-											Falk</strong></a>
-									is an Associate Professor in the Scientific Visualization Group at Linköping
-									University.
-									He received his Ph.D. degree (Dr.rer.nat.) from the University of Stuttgart in 2013.
-									His research focuses on the development and utilization of visualization techniques,
-									like volume rendering,
-									topological analysis, and GPU-based methods in general, tailored to specific
-									applications in various application
-									domains including cryo-EM, material science, plasma physics as well as the medical
-									domain. He is also a core
-									developer of the visualization framework Inviwo.</div>
-							</div>
-						</div>
-
-
-						<br />
-						<div class="speaker" id="Networking">
-							<div class="first-line">
-								<span class="title">Collaboration & Networking</span><br />
-								<span class="slot">Time: ~1 hour </span>
-							</div>
-							<div class="name">Organizers</div>
-
-							<br />
-
-							<div class="details">
-
-								<div class="abstract">
-									One of the best things about summer schools is meeting new people. We hope that this
-									one
-									will not be an exception. The school is open to attendees with diverse
-									expertise/interest areas spanning biology, medicine, and visualization.
-									This means there is a unique opportunity to learn from one another, look at the
-									research activities from different perspectives, and
-									maybe even build future collaborations. In this session, you will get a chance to
-									discuss with fellow
-									summer school attendees and find out how research is done in their research group,
-									what problems do they encounter, and how are they approaching them.
-									</br>
-
-									Note: Since the nature of this session strongly depends on the expertise/interest
-									areas of the attendees, it is subject to change. We will tailor the contents of the
-									session
-									and activities to the profile of registered attendees.
-								</div>
-
-								
-							</div>
-						</div>
-					</div>
+			<div class="speaker" id="Altair">
+				<div class="first-line">
+					<span class="title">ParaView tutorial</span><br />
+					<span class="slot">Time: ~3 hours </span>
 				</div>
-		
-	
-	</div>-->
+				<div class="name">Thomas Theußl</div>
+
+				<br />
+
+				<div class="details">
+					<div class="photo">
+						<img src="/2026/images/program/paraview.png" alt="paraview" />
+
+					</div>
+					<div class="abstract"><strong>Abstract:</strong>
+						In this tutorial, tailored towards beginners with little to no previous experience, we will
+						introduce <a href="https://www.paraview.org">ParaView</a>, a highly-scalable, open-source,
+						multi-platform data analysis and visualization application built on top of <a
+							href="https://vtk.org">VTK</a>,
+						the Visualization Toolkit. ParaView users can quickly create visualizations to
+						analyze their data using qualitative and quantitative techniques. The data exploration can be
+						done interactively in 3D. Attendees will participate in a hands-on session working with ParaView
+						to create 3D visualizations of scientific datasets.
+					</div>
+
+
+					<br>
+
+					<div class="bio-no-photo"> <a href="https://consivi.com/"><strong>Thomas Theußl </strong></a>
+						is with Consivi KG in Deutschlandsberg, Austria, which he founded in 2025, offering consulting,
+						support, and development in scientific visualization. His research interests include
+						visualization techniques, mathematical foundations of visualization, and applications of
+						visualization. Theußl received his Master's degree in Computer Science from TU Wien in Austria.
+						He has published tutorials on ParaView and Avizo on YouTube. Contact him at <a
+							href="mailto:thomas.theussl@consivi.com">thomas.theussl@consivi.com</a>.</div>
+				</div>
+			</div>
+
+
+			<div class="speaker" id="TBA">
+				<div class="first-line">
+					<span class="title">Additional tutorials will be announced soon.</span><br />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
