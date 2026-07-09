@@ -8,4 +8,4 @@ layout: announcement
 description: Find the registration info here.
 ---
 
-Registration is not opened yet.
+Registration will be handled via [EG VCBM](https://conferences.eg.org/vcbm2026/registration/) registration [form](https://events.eg.org/VCBM2026/). However, you do not have to register for full EG VCBM event - standalone summer school registration is possible. 
